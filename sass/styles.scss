@@ -17,3 +17,104 @@
 body {
   font-size: rem(60);
 }
+
+.mv{
+   background: url(../images/common/MV.png) center center / cover;
+  @include mq("md") {
+    color:#fff;
+    height:rem(900);
+    position:relative;
+  }
+}
+
+.header{
+  @include mq("md") {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:rem(15);
+  }
+}
+
+.header-logo img{
+  @include mq("md") {
+    width:rem(200); 
+  }
+}
+
+.header__nav{
+  @include mq("md") {
+    display:flex; 
+    align-items:center;
+  }
+}
+
+.nav-items__item{
+  @include mq("md") {
+    font-size:rem(16) ;
+    line-height:2;
+    letter-spacing: 2%;
+  }
+}
+
+.nav-items__item + .nav-items__item{
+  @include mq("md") {
+    margin-left:rem(40);
+  }
+}
+
+.nav-items__item_contact{
+  @include mq("md") {
+   color:#060C41;
+   background-color:#FFBA0E;
+   padding:rem(22) rem(63);
+   border-radius:rem(100);
+   box-sizing:border-box;
+  }
+}
+
+.header-message{
+  position:absolute;
+  top:40%;
+}
+
+.header-message__ttl{
+  @include mq("md") {
+    
+    // background: linear-gradient(#FF0000, #FFBB0E);
+    background: linear-gradient(90deg, #FF0000 , #FFBB0E 100%);
+    display:inline-block;
+    padding:rem(31) rem(30);
+    font-size:rem(64);
+   
+  }
+}
+
+.header-text_margin{
+  @include mq("md") {
+    margin-top:rem(40);
+  }
+}
+
+.header-text__01{
+  @include mq("md") {
+   font-size:rem(24);
+  //  line-height:150%;
+  }
+}
+
+.header-text__02{
+  @include mq("md") {
+    font-size:rem(24);
+    line-height:1.33;
+    margin-top:rem(10);
+    font-family: 'Bradley Hand',sans-serif;
+  }
+}
+
+
+
+
+
+
+
