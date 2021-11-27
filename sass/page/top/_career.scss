@@ -1,0 +1,129 @@
+
+
+//career
+
+.career{ 
+  position:relative;
+ }
+ 
+ .career::before{
+   content:'CAREER';
+   position:absolute;
+   line-height:1;
+   letter-spacing:0.02rem;
+   color:rgba(255,255,255,0.05);
+   font-weight:bold;
+   font-size:rem(50);
+   top:5%;
+   left:50%;
+   transform:translateX(-50%);
+   @include mq("md") {
+     font-size:rem(150);
+     top:rem(20);
+     left:calc( 50% - 30px);
+     transform:translateX(-100%); 
+   }
+ }
+ 
+ .bg-blue{
+   background-color:#0E112C;
+   width:100%;
+   box-sizing:border-box;
+   padding-top:rem(100);
+   padding-bottom:rem(80);
+   @include mq("md") {
+     
+     height:rem(510);
+     padding-top:rem(170);
+     padding-bottom:rem(196);
+  
+  }
+ }
+ 
+ .career-header{
+   color:#fff;
+ }
+ 
+ .career-header__ttl{
+   line-height:1;
+   font-size:rem(30);
+   text-align:center;
+   @include mq("md") {
+     text-align:left;
+     font-size:rem(48);
+  
+}
+ 
+ }
+ .career-header__text{
+   margin-top:rem(30);
+   font-size:rem(16);
+   line-height:1.5;
+   letter-spacing:0.02rem;
+   @include mq("md") {
+     margin-top:rem(60);
+     font-size:rem(20);
+  }
+ }
+ 
+ .bg-gray{
+   background-color:#ACACAC;
+   width:100%;
+   // height:rem(615);
+   position:relative;
+   height:13rem;
+   @include mq("md") {
+     height:rem(520);
+  
+  }
+ }
+ 
+ .career-main{
+   display:flex;
+   justify-content:space-around;
+   background-color:#fff;
+   position:absolute;
+   width:100%;
+   max-width:rem(345);
+   top:-14%;
+   transform:translateX(-50%);
+   left:50%;
+   
+   padding-top:rem(20);
+   padding-bottom:rem(20);
+   @include mq("md") {
+     max-width:rem(1190);
+     top:-20%;
+     
+     padding-top:rem(60);
+     padding-bottom:rem(60);
+  
+  }
+ }
+ 
+ .career-main__item{
+   width:25.21%;
+   text-align:center;
+ }
+ 
+ .career-item__img{
+   // width:25.21%;
+   width:100%;
+ }
+ 
+ .career-item__img img{
+   width:100%;
+   height:100%;
+ }
+ 
+ .career-item__text{
+   line-height:1.5;
+   margin-top:rem(15);
+   letter-spacing:0.02rem;
+   @include mq("md") {
+     
+     font-size:rem(20);
+     margin-top:rem(20);
+  
+  }
+ }

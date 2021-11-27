@@ -48,3 +48,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 });
+
+
+$(".qa-q").click(function(){
+  $(this).next().slideToggle(300);
+  $(this).css('border-radius', '10px 10px 10px 10px');
+  $(this).find('.qa-q__icon').toggleClass("is-open").300;
+});
+
+
+// $(function(){
+//   $('.qa-q').on('click',function(){
+//       $('.qa-a').fadeIn();
+//       return false;
+//   });
+//   $('.qa-q').on('click',function(){
+//       $('.qa-a').fadeOut();
+//       return false;
+//   });
+// });

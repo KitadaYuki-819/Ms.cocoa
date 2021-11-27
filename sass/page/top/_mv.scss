@@ -1,0 +1,82 @@
+.mv{
+  background: url(../images/common/MV.png) center right 20% / cover !important;
+  // background: url(../images/common/MV.png) center center / contain no-repeat;
+  height:rem(425);
+  position:relative;
+  color:#fff;
+  @include mq("md") {
+   background: url(../images/common/MV.png) center center / cover;
+   height:rem(900);
+ }
+}
+
+
+.mv-message{
+  position:absolute;
+  // top:20%;
+  top:49%;
+  @include mq("md") {
+    top:40%;
+  }
+}
+
+.mv-message__ttl{
+  font-size:rem(26);
+  background: linear-gradient(90deg, #FF0000 , #FFBB0E 100%);
+  padding:rem(15);
+  display:inline-block;
+  line-height:1.5;
+  @include mq("md") {
+    padding:rem(31) rem(30);
+    font-size:rem(64);
+  }
+
+  br{
+    display:block;
+    @media only screen and (max-width:1400px) {
+       display:block !important;
+      }
+    @include mq("md") {
+      display:none;
+      
+    }
+    // @include mq("lg") {
+    //   display:block;
+    // }
+  }
+}
+
+.mv-text_margin{
+  margin-top:rem(20);
+  @include mq("md") {
+    margin-top:rem(40);
+  }
+}
+
+.mv-text__01{
+  font-size:rem(20);
+  line-height:1.5;
+  @include mq("md") {
+   font-size:rem(24);
+  //  line-height:150%;
+  }
+
+  br{
+    display:block;
+    @include mq("md") {
+      display:none;
+      
+    }
+  }
+}
+
+.mv-text__02{
+  font-family: 'Bradley Hand',sans-serif;
+  font-size:rem(16);
+  line-height:1.33;
+  margin-top:rem(4);
+  @include mq("md") {
+    font-size:rem(24);
+    margin-top:rem(10);
+  }
+}
