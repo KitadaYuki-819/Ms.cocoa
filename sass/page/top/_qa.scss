@@ -146,6 +146,10 @@
   
 }
 
+// .qa-main:first-of-type .qa-a{
+//   display:block !important;
+// }
+
 .qa-a{
   background-color:#0E112C;
   //  border-radius:10px 10px 0 0;
@@ -158,6 +162,10 @@
     padding:rem(20) rem(95);
     
   }
+
+  // &:first-of-type{
+  //   display:block !important;
+  // }
 }
 
 .qa-a::before{
