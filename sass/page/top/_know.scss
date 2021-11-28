@@ -31,6 +31,12 @@
     background:url(../images/common/nasa-human.png) top left / 58.882% no-repeat;
    
   }
+
+  @media screen and (min-width:500px) and ( max-width:768px) {
+    padding-top:50%;
+  }
+
+
 }
 
 .know-message{
@@ -60,6 +66,13 @@
    display:block;
   @include mq("md") {
     display:none;
+  }
+
+  @media screen and (min-width:620px) and ( max-width:768px) {
+    display:none;
+  }
+  @media screen and (min-width:769px) and ( max-width:1020px) {
+    display:block;
   }
  }
 }

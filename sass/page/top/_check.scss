@@ -132,8 +132,17 @@
   padding-top:rem(100);
   padding-bottom: 6rem;
   @include mq("md") {
-    padding-top:rem(144);
+     padding-top:rem(144);
+    // padding-top:20%;
     padding-bottom:rem(231.9);
+  }
+  @media screen and (min-width:769px) and ( max-width:1240px) {
+    padding-top:18rem;
+  }
+  
+  @media screen and (max-width:359px) {
+    padding-top:9rem;
+    
   }
 }
 
@@ -145,7 +154,9 @@
   color:#E0E0E0;
   font-size: rem(45);
   top:3.8rem;
-
+  
+  
+  
   @include mq("md") {
     top:0;
     font-size:rem(150);

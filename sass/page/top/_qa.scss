@@ -142,6 +142,10 @@
   // transform:translateY(0);
   top:40%;
 }
+
+.qa-a-is-open{
+  display:block !important;
+}
 .qa-item__q{
   
 }
@@ -162,11 +166,19 @@
     padding:rem(20) rem(95);
     
   }
-
-  // &:first-of-type{
-  //   display:block !important;
-  // }
 }
+    
+    .qa-main li:first-of-type .qa-a{
+    //  color: #FF0004 !important;
+    display:block;
+  }
+  
+  // .qa-main li:not(.qa-a__text){
+  //   color:#FF0004 !important;
+  // }
+// .qa-a-open {
+//   transform: translateY(-50%) rotate(0);
+// }
 
 .qa-a::before{
   content:'A';

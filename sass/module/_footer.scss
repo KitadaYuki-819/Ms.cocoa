@@ -40,6 +40,7 @@
     margin-top:rem(15);
     @include mq("md") {
       margin-left:rem(40);
+      margin-top:0;
     }
   }
 }

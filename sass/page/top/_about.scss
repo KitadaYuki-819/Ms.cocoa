@@ -25,11 +25,41 @@
   transform:translateX(-50%);
   @include mq("md") {
     top:rem(10);
-    left: calc(50% - 5.3125rem);
-    transform:translateX(-100%);
+    // left: calc(50% - 5.3125rem);
+    // transform:translateX(-100%);
+    left:rem(25);
+    transform:translateX(0);
     font-size:rem(150);
     line-height:rem(150);
   }
+}
+
+.about-ttl-set{
+  position:relative;
+  max-width:rem(1390);
+  width:100%;
+  margin:0 auto;
+
+}
+
+.about-sub-ttl{
+    position:absolute;
+    font-weight:700;
+    letter-spacing:0.02;
+    color:rgba(0, 0, 0, 0.5);
+    font-size:rem(50);
+    top:1.5rem;
+    left:50%;
+    transform:translateX(-50%);
+    @include mq("md") {
+      top:rem(10);
+      // left: calc(50% - 5.3125rem);
+      left:0;
+      // transform:translateX(-100%);
+      transform:translateX(0);
+      font-size:rem(150);
+      line-height:rem(150);
+}
 }
 
 .about-ttl{
