@@ -1,0 +1,214 @@
+//rct
+.rct{
+  background:url(../images/common/nasa-Q1p7bh3SHj8-unsplash.png) center center / cover;
+  color:#fff;
+  padding-top:5rem;
+  padding-bottom:4rem;
+  position:relative;
+  @include mq("md") {
+    padding-top: rem(155);
+    padding-bottom:rem(144);
+  
+  }
+}
+
+.rct::before{
+  content:'RECURUIT';
+  position:absolute;
+  color:rgba(255,255,255, 0.15);
+  font-weight:bold;
+  font-size:rem(50);
+  top:3%;
+  right:50%;
+  transform:translate(50%);
+  @include mq("md") {
+    right:0;
+    transform:translate(0); 
+    font-size:8.7rem;
+    top:0.8rem;
+   
+  }
+
+}
+
+.rct-header{
+  text-align: center;
+}
+
+.rct-header__ttl{
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  text-align: center;
+  font-size:rem(30);
+  @include mq("md") {
+    font-size: rem(48);
+    
+  
+}
+
+}
+
+.rct-header__join{
+  letter-spacing: 0.02rem;
+  display:inline-block;
+  position:relative;
+  margin-top:rem(30);
+  font-size:rem(16);
+  line-height:1.5;
+  @include mq("md") {
+      line-height: 1.5;
+      font-size: rem(20);
+      margin-top:5rem;
+    }
+
+  .rct-join_br01{
+    display:block;
+    letter-spacing: 0;
+    @include mq("md") {
+      display:none;
+      letter-spacing: 0;
+  }
+  }
+  
+  .rct-join_br02{
+    display:block;
+    letter-spacing: 0;
+    @include mq("md") {
+      display:block;
+      letter-spacing: 0;
+  }
+  }
+}
+
+.rct-header__join::before{
+  content:'';
+ position:absolute;
+ height:rem(3);
+ width:rem(70);
+ background-color:#fff;
+ transform:rotate(60deg);
+ top:42%;
+ left:-2.75rem;
+}
+
+.rct-header__join::after{
+ content:'';
+ position:absolute;
+ width:rem(70);
+ height:rem(3);
+ background-color:#fff;
+ transform:rotate(-60deg);
+ top:41%;
+ right:-3.1rem;
+}
+
+.rct-content{
+  background-color:#fff;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  box-sizing:border-box;
+  border:7px solid #A3A3A3;
+  padding:rem(20) rem(20);
+  @include mq("md") {
+    max-width:rem(750);
+    border:10px solid #A3A3A3;
+    padding:3rem 9.3rem;
+  }
+}
+.rct__astronaut{
+  @include mq("md") {
+    width:rem(600);
+    margin-left:auto;
+    margin-right:auto;
+   
+  }
+}
+
+.rct__astronaut img{
+  width:100%;
+  height:100%;
+  vertical-align:bottom;
+}
+.rct__main{
+  text-align:center;
+ 
+}
+
+.rct-content__dl{
+}
+
+.rct-dl__flex{
+  color:#000000;
+  display:flex;
+  font-size:rem(16);
+  line-height:1.25;
+  text-align:left;
+    @include mq("md") {
+    
+    font-size: rem(16);
+    line-height:1.5;
+  
+}
+  
+}
+
+.rct-dl__flex + .rct-dl__flex{
+  margin-top: rem(50);
+  @include mq("md") {
+  margin-top:2.9rem;
+  
+}
+
+}
+
+.rct-flex__dt{
+  width:rem(124);
+}
+
+.rct-flex__dd{
+  width:72.92%;
+  @include mq("md") {
+    line-height:1.6;
+  
+}
+  br{
+    letter-spacing: 0;
+    display:block;
+  }
+}
+
+.rct-content__btn{
+  background-color:#FFBA0E;
+  color:#060C41;
+  text-align:center;
+  line-height:1.33333;
+  letter-spacing:0.02rem;
+  border-radius:rem(100);
+  font-weight:bold;
+  transition: .3s;
+  display:inline-block;
+  font-size:rem(20);
+  border:3px solid #060c41;
+  padding:rem(10) rem(30);
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:0px 5px 0px 0px #060C41;
+  margin-top:rem(30);
+    @include mq("md") {
+    font-size:rem(24);
+    box-shadow:0px 10px 0px 0px #060C41;
+    border:7px solid #060C41;
+    padding:0.9rem 7rem;
+    margin-top: 1.9rem;;
+  
+  
+  }
+
+}
+
+.rct-content__btn:hover {
+  box-shadow: none;
+  transform: translate3d(0, 5px, 0);
+}

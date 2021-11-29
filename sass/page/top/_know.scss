@@ -1,0 +1,98 @@
+.know{
+  background:url(../images/common/know-bg.png) center center / cover;
+  padding-top:rem(45);
+  padding-right:rem(10);
+  padding-left:rem(10);
+  
+  @include mq("md") {
+    padding-right:rem(20);
+    padding-left:rem(20);
+    padding-top:rem(49);
+    padding-bottom:rem(50);
+  }
+}
+
+.know-inner{
+  position:relative;
+  max-width:rem(1360);
+  width:100%;
+  margin:0 auto;
+}
+
+.know-picture{
+  background:url(../images/common/nasa-human.png) top left / 67.882% no-repeat;
+  padding-top:70%;
+  @include mq("md") {
+    padding-top:38%;
+    
+    background:url(../images/common/nasa-human.png) top left / 58.882% no-repeat;
+   
+  }
+
+  @media screen and (min-width:500px) and ( max-width:768px) {
+    padding-top:50%;
+  }
+
+
+}
+
+.know-message{
+  position:absolute;
+  right:0;
+  top:50%;
+  background-color:#fff;
+  padding:rem(15) rem(15);
+  transform:translateY(-50%);
+  @include mq("md") {
+    padding:rem(45) rem(26);
+    
+  }
+}
+
+.know-message__ttl{
+  font-size:rem(20);
+  font-weight:bold;
+  line-height:1.5;
+  @include mq("md") {
+    line-height:2;
+    font-size:rem(36);
+    
+  }
+ 
+
+ .know-br01{
+   display:block;
+   letter-spacing:0;
+ }
+  
+ .know-br02{
+   display:block;
+   letter-spacing:0;
+  @include mq("md") {
+    display:none;
+  }
+
+  @media screen and (min-width:620px) and ( max-width:768px) {
+    display:none !important;
+    letter-spacing:0;
+  }
+  @media screen and (min-width:769px) and ( max-width:1020px) {
+    display:block !important;
+    letter-spacing:0;
+  }
+ }
+}
+
+.know-message__text{
+  font-size:rem(14);
+  line-height:1.3333;
+  font-family:'Bradley Hand',sans-serif;
+  @include mq("md") {
+    font-size:rem(24);
+    
+  }
+}
+
+
+
+

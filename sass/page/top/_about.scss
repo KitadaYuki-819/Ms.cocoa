@@ -1,0 +1,197 @@
+//about-section
+.about{
+
+  background: url(../images/common/diego-ph-5LOhydOtTKU-unsplash.jpg) center center / cover;
+  color:#fff;
+  position:relative;
+  padding-top:rem(70);
+  padding-bottom:rem(70);
+  @include mq("md") {
+    padding-top:9rem;
+    padding-bottom:11rem;
+    
+  }
+}
+
+.about::before{
+  content:'ABOUT';
+  position:absolute;
+  font-weight:700;
+  letter-spacing:2px;
+  color:rgba(0, 0, 0, 0.5);
+  top:1.5rem;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:rem(50);
+  @include mq("md") {
+    transform:translateX(0);
+    line-height:rem(150);
+    left:rem(25);
+    top:rem(10);
+    font-size:rem(50);
+    font-size:8.8rem;
+  }
+}
+
+.about-ttl-set{
+  position:relative;
+  max-width:rem(1390);
+  width:100%;
+  margin:0 auto;
+
+}
+
+
+.about-ttl{
+  text-align:center;
+  font-size:rem(30);
+  line-height: 1;
+  letter-spacing: 0.5;
+  @include mq("md") {
+     font-size: rem(48);
+   }
+}
+
+.about-main{
+  position:relative;
+}
+
+.about-main_margin{
+  margin-top:3.8rem;
+  @include mq("md") {
+    margin-top:rem(82);
+  }
+}
+
+
+.about-item{
+  @include mq("md") {
+    position:relative;
+    display:flex;
+    align-items:flex-start;
+  }
+}
+
+.about-main__item + .about-main__item{
+  margin-top:rem(62);
+
+  @include mq("md") {
+    margin-top:2.7rem;
+  }
+}
+
+.about-item__img{
+  position:relative;
+  width:100%;
+  @include mq("md") {
+    width:50.33%;
+  }
+}
+
+
+.number{
+  position:absolute;
+  width:rem(80);
+  height:rem(80);
+  left:rem(20);
+  top:rem(-20);
+  @include mq("md") {
+    width:rem(120);
+    height:rem(120);
+    top:rem(-35);
+    left:rem(25);  
+  }
+}
+.about-main-img{
+  width:100%;
+  height:100%;
+}
+
+.about-item__message{
+  margin-top:rem(20);
+  @include mq("md") {
+    width:44.714%;
+    margin-top:0;
+    margin-left:4.94%;
+
+  }
+}
+
+.about-message__ttl{
+ 
+  font-size:rem(22);
+  letter-spacing:0.1rem;
+  @include mq("md") {
+    font-size:rem(36);
+    // letter-spacing:0.2rem;
+
+    letter-spacing: 0.1rem;
+    
+  }
+}
+
+.about-message__text{
+  letter-spacing:0.05rem;
+  line-height:1.75;
+  font-size:rem(14);
+  margin-top:rem(20);
+    @include mq("md") {
+      font-size:rem(16);
+      line-height:2.5;
+      // margin-top:rem(31);
+      
+      margin-top:1.76rem;
+    }
+    
+    br{
+    letter-spacing:0;
+    display:block;
+
+  }
+}
+
+.about-item:nth-child(2){
+  @include mq("md") {
+    flex-flow:row-reverse;
+  }
+
+}
+.about-item:nth-child(2) .about-item__message{
+  @include mq("md") {
+    margin-left:5.4%;
+    margin-top:7px;
+   
+  }
+}
+
+.about-item:nth-child(2) .about-message__ttl{
+  @include mq("md") {
+    
+    padding-top:rem(9);
+  }
+
+}
+.about-item:nth-child(2) .number{
+  left:50%;
+  transform:translateX(90%);
+  @include mq("md") {
+    left:55%;
+    transform:translateX(60%);
+  }
+}
+
+.about-item:nth-child(2) .about-item__message{
+  @include mq("md") {
+    margin-left:0;
+    margin-right:4.94%;
+   
+    
+  }
+}
+
+.about-item:nth-child(3) .about-message__text{
+  @include mq("md") {
+    margin-top:1.1rem;
+  }
+}
+
