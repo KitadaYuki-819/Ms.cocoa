@@ -1,9 +1,6 @@
 .know{
-  // background:url(../images/common/know-bg.png) center center / cover;
   background:url(../images/common/know-bg.png) center center / cover;
-  // z-index:-1;
   padding-top:rem(45);
-  // padding-bottom:rem(30);
   padding-right:rem(10);
   padding-left:rem(10);
   
@@ -61,18 +58,27 @@
     font-size:rem(36);
     
   }
+ 
 
- .know-br{
+ .know-br01{
    display:block;
+   letter-spacing:0;
+ }
+  
+ .know-br02{
+   display:block;
+   letter-spacing:0;
   @include mq("md") {
     display:none;
   }
 
   @media screen and (min-width:620px) and ( max-width:768px) {
-    display:none;
+    display:none !important;
+    letter-spacing:0;
   }
   @media screen and (min-width:769px) and ( max-width:1020px) {
-    display:block;
+    display:block !important;
+    letter-spacing:0;
   }
  }
 }

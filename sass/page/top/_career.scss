@@ -18,13 +18,11 @@
    left:50%;
    transform:translateX(-50%);
    @include mq("md") {
-     font-size:rem(150);
      top:rem(20);
-    //  left:calc( 50% - 30px);
-    //  transform:translateX(-100%); 
     left:rem(25);
     transform:translateX(0);
-   }
+    font-size:8rem;
+  }
  }
  
  .bg-blue{
@@ -36,9 +34,10 @@
    @include mq("md") {
      
      height:rem(510);
-     padding-top:rem(170);
      padding-bottom:rem(196);
-  
+    padding-top:9.2rem;
+
+
   }
  }
  
@@ -66,16 +65,20 @@
      margin-top:rem(60);
      font-size:rem(20);
   }
+
+  br{
+    letter-spacing:0;
+    display:block;
+  }
  }
  
  .bg-gray{
    background-color:#ACACAC;
    width:100%;
-   // height:rem(615);
    position:relative;
    height:13rem;
    @include mq("md") {
-     height:rem(520);
+    height:30rem;
   
   }
  }
@@ -95,10 +98,10 @@
    padding-bottom:rem(20);
    @include mq("md") {
      max-width:rem(1190);
-     top:-20%;
      
      padding-top:rem(60);
      padding-bottom:rem(60);
+     top:-20%;
   
   }
  }
@@ -109,7 +112,6 @@
  }
  
  .career-item__img{
-   // width:25.21%;
    width:100%;
  }
  

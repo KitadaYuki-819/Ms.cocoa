@@ -2,8 +2,6 @@
 
   background:url(../images/common/contact-form-bg.png) center center / cover;
   vertical-align: top;
-  // padding-top:rem(150);
-  // padding-bottom:rem(150);
   padding:rem(100) rem(10);
   box-sizing:border-box;
   @include mq("md") {
@@ -15,8 +13,6 @@
 .contact{
   background-color:#fff;
   border:10px solid #a3a3a3;
-  // padding-top:rem(60);
-  // padding-bottom:rem(60);
   box-sizing: border-box;
   padding:rem(40) rem(15);
   @include mq("md") {
@@ -31,11 +27,6 @@
   margin:0 auto;
 }
 
-// .contact-inner{
-//   max-width:rem(602);
-//   width:100%;
-//   margin:0 auto;
-// }
 
 .contact__ttl{
   font-size: rem(30);
@@ -70,7 +61,6 @@
 }
 
 .form-item{
-  // align-items:center;
   @include mq("md") {
     display:flex; 
   }
@@ -87,8 +77,6 @@
   font-size: rem(20);
   line-height: 1;
   letter-spacing:0.02rem;
-  // width:rem(163);
-  // width:10.7rem;
   width:100%;
   margin-right:0;
   padding-top:1.53rem;
@@ -183,7 +171,6 @@
   display:inline-block;
   height:22px;
   width:22px;
-  // border:solid 1px #3ea1d1;
   border:solid 1px #111;
   background:#fff;
   position:absolute;
@@ -221,12 +208,7 @@
 }
 
 .contact-link{
-  // color:#3ea1d1;
   color:#111;
-  // text-decoration:underline;
-  // font-size:rem(16);
-  // line-height:2;
-  // letter-spacing:0.02rem;
 }
 
 .contact-footer__submit{

@@ -2,35 +2,6 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-  // var topBtn = $('.pagetop');
-  // topBtn.hide();
-
-  // // ボタンの表示設定
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 70) {
-  //     // 指定px以上のスクロールでボタンを表示
-  //     topBtn.fadeIn();
-  //   } else {
-  //     // 画面が指定pxより上ならボタンを非表示
-  //     topBtn.fadeOut();
-  //   }
-  // });
-
-
-  // var topBtn = $('.top-page');
-  // topBtn.hide();
-  //  var mv = $('.mv').height();
-  // // ボタンの表示設定
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > mv) {
-  //     // 指定px以上のスクロールでボタンを表示
-  //     topBtn.fadeIn();
-  //   } else {
-  //     // 画面が指定pxより上ならボタンを非表示
-  //     topBtn.fadeOut();
-  //   }
-  // });
-
 
   var topBtn = $('.top-page');
   topBtn.hide();
@@ -48,24 +19,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 
-  // $(function () {
-  //   var imgHeight = $('.mv').outerHeight(); //画像の高さを取得。これがイベント発火位置になる。
-  //   var topBtn = $('.top-page');
-  //   $(window).on('load scroll' , function() {
-  //   if ($(this).scrollTop() > imgHeight) {
-  //     // 指定px以上のスクロールでボタンを表示
-  //     topBtn.fadeIn();
-  //   } else {
-  //     // 画面が指定pxより上ならボタンを非表示
-  //     topBtn.fadeOut();
-  //   }
-  // });
-  // });
-
-  // $(window).on('load scroll', function ()
-
-
-
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({
@@ -76,8 +29,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   //ドロワーメニュー
   $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
     $(".js-drawer-open").toggleClass("open");
     $(".drawer-menu").toggleClass("open");
     $("html").toggleClass("is-fixed");
@@ -99,14 +50,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 });
-
-
-// $(".qa-q").click(function(){
-//   $(this).next().slideToggle(300);
-//   $(this).css('border-radius', '10px 10px 10px 10px');
-//   $(this).find('.qa-q__icon').toggleClass("is-open");
-// });
-
 
 
 
@@ -146,27 +89,6 @@ jQuery('.drawer-content__item a').on('click', function (e) {
 
 
 
-// $(function() {
-//   $('.qa-q').click(function() {
-//     //クリックされた質問の子要素の.qa-a以外からはis-openというクラスを外す
-    
-
-//     $('.qa-q').not(this).children('.qa-a').removeClass('is-open');
-//     $('.qa-q').not(this).children('.qa-q__icon').removeClass('is-open');
-//     //クリックされた質問部分に対する回答以外は全て閉じる
-//     $('.qa-q').not(this).next().slideUp(400);
-    
-   
-//     //クリックされた質問の子要素の.qa-aにis-openクラスが付与されいなければ付与し、付与されていれば外す
-//     $(this).children('.qa-a').toggleClass('is-open');
-//     $(this).children('.qa-q__icon').toggleClass('is-open');
-
-//     //クリックされた質問に対する回答を表示する
-//     $(this).next().slideToggle(400);
-//   });
-// });
-
-
 $(function() {
   $('.qa-q').click(function() {
     //クリックされた質問の子要素の.qa-a以外からはis-openというクラスを外す
@@ -187,31 +109,6 @@ $(function() {
   });
 });
 
-
-// $(function () {
-//   $("dt").on("click", function () {
-//       $($(this).next("dd").find(".box")[0]).toggleClass("box-expanded");
-//   });
-// });
-
-
-// new WOW().init();
-
-
-
-
-// $(function(){
-//   $(window).scroll(function (){
-//       $('.mv-message__ttl').each(function(){
-//           var elemPos = $(this).offset().top;
-//           var scroll = $(window).scrollTop();
-//           var windowHeight = $(window).height();
-//           if (scroll > elemPos - windowHeight + 150){
-//               $(this).addClass('scrollin');
-//           }
-//       });
-//   });
-// });
  
         $(document).ready( function(){
           // ページ読み込み時に実行したい処理

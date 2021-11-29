@@ -47,7 +47,6 @@
 }
 
 .qa-main_modi{
-  // margin-top:rem(62);
   width:100%;
   margin:rem(62) auto 0;
   border-radius:10px;
@@ -70,7 +69,6 @@
 }
 .qa-q{
   background-color:#fff;
-  // border-radius:rem(10) rem(10) 0 0 ;
   border-radius:rem(10) rem(10) rem(10) rem(10);
   position:relative;
   padding:rem(25) rem(60);
@@ -97,7 +95,6 @@
   top:50%;
   left:rem(15);
   transform:translateY(-50%);
-  // transform:translateX(-50%);
   text-align:center;
   font-weight:bold;
   font-size:rem(16);
@@ -110,17 +107,6 @@
   }
 }
 
-// .qa-q::after{
-//   content:"";
-//   background:url(../images/common/akar-icons_chevron-up.png) center center / cover;
-  
-//   position:absolute;
-//   width:rem(36);
-//   height:rem(36);
-//   top:50%;
-//   right:rem(26);
-//   transform:translateY(-50%);
-// }
 
 .qa-q__icon{
   position:absolute;
@@ -139,7 +125,6 @@
 .is-open{
   transform:rotate(180deg);
   right:rem(13);
-  // transform:translateY(0);
   top:40%;
 }
 
@@ -150,13 +135,9 @@
   
 }
 
-// .qa-main:first-of-type .qa-a{
-//   display:block !important;
-// }
 
 .qa-a{
   background-color:#0E112C;
-  //  border-radius:10px 10px 0 0;
   border-radius:0 0 rem(10) rem(10);
   
   position:relative;
@@ -169,16 +150,10 @@
 }
     
     .qa-main li:first-of-type .qa-a{
-    //  color: #FF0004 !important;
     display:block;
   }
   
-  // .qa-main li:not(.qa-a__text){
-  //   color:#FF0004 !important;
-  // }
-// .qa-a-open {
-//   transform: translateY(-50%) rotate(0);
-// }
+ 
 
 .qa-a::before{
   content:'A';

@@ -1,6 +1,6 @@
 .mv{
   background: url(../images/common/MV.png) center right 20% / cover !important;
-  // background: url(../images/common/MV.png) center center / contain no-repeat;
+
   height:rem(425);
   position:relative;
   color:#fff;
@@ -13,16 +13,12 @@
 
 .mv-message{
   position:absolute;
-  // top:20%;
-  // top:49%;
   top:42%;
   @include mq("md") {
-    top:40%;
+    top:42.3%;
   }
 
-  // @media screen and (min-width:769px) and ( max-width:767px) {
-  //   top:39%
-  // }
+  
 }
 
 .mv-message__ttl{
@@ -31,17 +27,14 @@
   padding:rem(15);
   display:inline-block;
   line-height:1.25;
-
-
-
   opacity: 0.1;
   transform: translateX(-50px);
-  // transform: translateX(-20px);
   transition: all .8s;
   @include mq("md") {
-    padding:rem(31) rem(30);
     font-size:rem(64);
+    padding:1.6rem 1.1rem;
   }
+}
 
   
 
@@ -54,10 +47,6 @@
       display:none;
       
     }
-    // @include mq("lg") {
-    //   display:block;
-    // }
-  }
 }
 
 .scrollin {
@@ -66,10 +55,9 @@
 }
 
 .mv-text_margin{
-  // margin-top:rem(20);
   margin:0.5rem;
   @include mq("md") {
-    margin-top:rem(40);
+    margin-top:2.6rem;
   }
 }
 
@@ -78,7 +66,6 @@
   line-height:1.5;
   @include mq("md") {
    font-size:rem(24);
-  //  line-height:150%;
   }
 
   br{
@@ -94,26 +81,13 @@
   font-family: 'Bradley Hand',sans-serif;
   font-size:rem(16);
   line-height:1.33;
-  // margin-top:rem(4);
   @include mq("md") {
     font-size:rem(24);
-    margin-top:rem(10);
+    margin-top:0.6rem;
   }
 }
 
 
-
-
-
-// .left-to-right {
-//   opacity: 0.1;
-//   transform: translateX(-20px);
-//   transition: all 1s;
-// }
-// .left-to-right.scrollin {
-//   opacity: 1;
-//   transform: translate(0);
-// }
 
 
 
