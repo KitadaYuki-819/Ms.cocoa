@@ -1,0 +1,83 @@
+.bg{
+  background: url(../images/common/diego-ph-5LOhydOtTKU-unsplash.jpg) center center / cover;
+
+}
+.container_pd{
+  padding-top:10.75rem;
+  padding-bottom:rem(160);
+}
+
+form{
+  color:#fff;
+
+  
+}
+
+.form__ttl{
+  text-align:center;
+  font-size:rem(36);
+  margin-bottom:rem(50);
+}
+
+.form-group + .form-group{
+  margin-top:rem(30) !important;
+}
+.row{
+  display:block;
+  @include mq("md") {
+    display:flex;
+   }
+}
+
+.col-3{
+  max-width:100%;
+  @include mq("md") {
+    max-width:25%;
+
+   }
+}
+.col-3 label{
+  margin-bottom:rem(8);
+}
+.confirm-btn{
+  margin-top:2rem;
+  display:block;
+  @include mq("md") {
+   display:flex;
+  }
+}
+
+.confirm-btn a{
+  border:2px solid #fff;
+  padding:0.7rem 3.3rem;
+  margin-right:0;
+  margin-bottom:1rem;
+  @include mq("md") {
+    margin-bottom:0;
+    margin-right:2.5rem;
+
+   }
+}
+
+.confirm-btn a:hover{
+  text-decoration: none;
+  color:#FFF;
+  opacity:0.7;
+}
+
+.confirm-btn button{
+  border:none;
+  background-color:#0e112c;
+  padding:0.8rem 2.5rem;
+  color:#fff;
+  margin-top:3rem;
+  @include mq("md") {
+    margin-top:0;
+  }
+}
+
+.confirm-btn button:hover{
+  text-decoration: none;
+  color:#FFF;
+  opacity:0.7;
+}

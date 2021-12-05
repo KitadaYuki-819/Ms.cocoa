@@ -80,6 +80,7 @@
   width:100%;
   margin-right:0;
   padding-top:1.53rem;
+  color:#111;
   @include mq("md") {
     width:12.4rem;
     margin-right:5%;
@@ -104,6 +105,10 @@
     margin-top: 0;
 
   }
+}
+
+.error_msg{
+  color:red;
 }
 
 .form-item__dd input{
