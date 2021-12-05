@@ -1,0 +1,18 @@
+.thanks{
+  color:#fff;
+  text-align:center;
+  line-height: 3;
+  width:80%;
+  margin:0 auto;
+  font-size: rem(24);
+  padding-top:rem(100);
+  padding-bottom:rem(50);
+  
+  @include mq("md") {
+    font-size: rem(36);
+    // padding:rem(300);
+    // padding:rem(200);
+    padding-top:rem(200);
+    padding-bottom:rem(200);
+  }
+}
