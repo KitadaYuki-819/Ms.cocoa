@@ -88,7 +88,6 @@ jQuery('.drawer-content__item a').on('click', function (e) {
 
 
 
-
 $(function() {
   $('.qa-q').click(function() {
     //クリックされた質問の子要素の.qa-a以外からはis-openというクラスを外す
@@ -114,6 +113,40 @@ $(function() {
           // ページ読み込み時に実行したい処理
           $('.mv-message__ttl').addClass('scrollin');   
     });
+
+
+     // =========================================================
+ //      画面が開かれたときの初期設定
+ // =========================================================
+ window.onload = function() {
+ 
+  // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+  var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2);
+  langSet(wDef);
+ 
+}
+ // =========================================================
+ //      選択された言語のみ表示
+ // =========================================================
+function langSet(argLang){
+ 
+  // --- 切り替え対象のclass一覧を取得 ----------------------
+  var elm = document.getElementsByClassName("langCng");
+ 
+  for (var i = 0; i < elm.length; i++) {
+ 
+    // --- 選択された言語と一致は表示、その他は非表示 -------
+    if(elm[i].getAttribute("lang") == argLang){
+      elm[i].style.display = '';
+    }
+    else{
+      elm[i].style.display = 'none';
+    }
+  }
+}
+
+
+
 
 
 

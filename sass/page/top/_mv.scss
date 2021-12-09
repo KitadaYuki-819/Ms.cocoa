@@ -36,6 +36,30 @@
   }
 }
 
+
+//英語、日本語切り替え実装
+.lang{
+  padding-top:10rem;
+}
+
+ /* === ラジオボタンは非表示 ================== */
+ #sample1 input[type="radio"]{
+  display    : none;
+}
+ 
+ /* === 各ラジオボタンのラベルをボタンに変更 == */
+#sample1 label{
+  display    : inline-block;
+  border     : 1px solid #ccc;
+  box-shadow : 2px 2px #999;
+  padding    : 2px 6px;
+}
+ 
+ /* === 選択されている言語のラベル色を変更 ==== */
+#sample1 input[type="radio"]:checked + label {
+  background : #ffa64d;
+}
+
   
 
   br{
