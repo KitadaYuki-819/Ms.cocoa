@@ -78,7 +78,14 @@ $(function () {
   });
 });
 
-jQuery('.drawer-content__item a').on('click', function (e) {
+// jQuery('.drawer-content__item a').on('click', function (e) {
+//   e.preventDefault();
+//   jQuery('.drawer-icon').toggleClass('is-active');
+//   jQuery('.drawer-content').toggleClass('is-active');
+//   jQuery('.drawer-background').toggleClass('is-active');
+//   // return false;
+// });
+jQuery('.js-drawer a').on('click', function (e) {
   e.preventDefault();
   jQuery('.drawer-icon').toggleClass('is-active');
   jQuery('.drawer-content').toggleClass('is-active');
@@ -119,11 +126,9 @@ $(function() {
  //      画面が開かれたときの初期設定
  // =========================================================
  window.onload = function() {
- 
   // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
   var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2);
-  langSet(wDef);
- 
+  langSet(wDef); 
 }
  // =========================================================
  //      選択された言語のみ表示
@@ -144,6 +149,38 @@ function langSet(argLang){
     }
   }
 }
+
+
+
+// $(function(){
+//   $('.Form-CheckItem-Label').on('click', function(){
+//     if ($('#JS_CheckItem').prop("checked") == true) {
+//       $('.JS_FormSubmit').addClass('isActive');
+//     } else {
+//       $('.JS_FormSubmit').removeClass('isActive');
+//     }
+//   });
+// });
+
+
+ $(function() {
+	/* 「同意する」チェックイベント */
+	$('.Form-CheckItem-Label').on('click', function(){
+		if($('#JS_CheckItem').prop("checked")){
+			$('.util-link').css('opacity', '1');
+		} else {
+			$('.util-link ').css('opacity', '0.6');
+		}
+	});
+ 
+
+	/* 「同意する」がチェックされていない場合submit=false */
+	$('.util-link ').on('click', function(){
+		if ($('.util-link ').css('background-color') == 'gold') {
+			return false;
+		}
+	});
+});
 
 
 

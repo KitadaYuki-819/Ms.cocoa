@@ -233,12 +233,20 @@
   font-weight:bold;
   letter-spacing:0.02rem;
   border:none;
+  opacity:0.6;
+  // transition:.5s;
   
   @include mq("md") {
     font-size:rem(24);
     padding:rem(20) rem(141);
     
   }
+}
+
+
+.isActive {
+  opacity: 1;
+ 
 }
 
 
