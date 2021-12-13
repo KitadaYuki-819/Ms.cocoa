@@ -116,13 +116,22 @@
     padding:3rem 9.3rem;
   }
 }
+
 .rct__astronaut{
+  opacity:0;
+  transition:1s;
+  transform:translateY(20px);
   @include mq("md") {
     width:rem(600);
     margin-left:auto;
     margin-right:auto;
-   
+    
   }
+}
+
+.rct .show{
+  opacity:1;
+  transform:none;
 }
 
 .rct__astronaut img{
@@ -211,4 +220,9 @@
 .rct-content__btn:hover {
   box-shadow: none;
   transform: translate3d(0, 5px, 0);
+}
+
+.rct-content__btn a:hover{
+  text-decoration:none;
+  color:#111;
 }

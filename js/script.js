@@ -1,3 +1,4 @@
+// const { arrayify } = require("browser-sync/dist/utils");
 
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
@@ -78,14 +79,20 @@ $(function () {
   });
 });
 
-jQuery('.drawer-content__item a').on('click', function (e) {
+// jQuery('.drawer-content__item a').on('click', function (e) {
+//   e.preventDefault();
+//   jQuery('.drawer-icon').toggleClass('is-active');
+//   jQuery('.drawer-content').toggleClass('is-active');
+//   jQuery('.drawer-background').toggleClass('is-active');
+//   // return false;
+// });
+jQuery('.js-drawer a').on('click', function (e) {
   e.preventDefault();
   jQuery('.drawer-icon').toggleClass('is-active');
   jQuery('.drawer-content').toggleClass('is-active');
   jQuery('.drawer-background').toggleClass('is-active');
   // return false;
 });
-
 
 
 
@@ -114,6 +121,82 @@ $(function() {
           // ページ読み込み時に実行したい処理
           $('.mv-message__ttl').addClass('scrollin');   
     });
+
+
+     // =========================================================
+ //      画面が開かれたときの初期設定
+ // =========================================================
+ window.onload = function() {
+  // --- ブラウザのデフォルト言語を取得して初回の表示 ----- 
+  var wDef = (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2);
+  langSet(wDef); 
+}
+ // =========================================================
+ //      選択された言語のみ表示
+ // =========================================================
+function langSet(argLang){
+ 
+  // --- 切り替え対象のclass一覧を取得 ----------------------
+  var elm = document.getElementsByClassName("langCng");
+ 
+  for (var i = 0; i < elm.length; i++) {
+ 
+    // --- 選択された言語と一致は表示、その他は非表示 -------
+    if(elm[i].getAttribute("lang") == argLang){
+      elm[i].style.display = '';
+    }
+    else{
+      elm[i].style.display = 'none';
+    }
+  }
+}
+
+
+
+// $(function(){
+//   $('.Form-CheckItem-Label').on('click', function(){
+//     if ($('#JS_CheckItem').prop("checked") == true) {
+//       $('.JS_FormSubmit').addClass('isActive');
+//     } else {
+//       $('.JS_FormSubmit').removeClass('isActive');
+//     }
+//   });
+// });
+
+
+ $(function() {
+	/* 「同意する」チェックイベント */
+	$('.Form-CheckItem-Label').on('click', function(){
+		if($('#JS_CheckItem').prop("checked")){
+			$('.util-link').css('opacity', '1');
+		} else {
+			$('.util-link ').css('opacity', '0.6');
+		}
+	});
+ 
+
+	/* 「同意する」がチェックされていない場合submit=false */
+	$('.util-link ').on('click', function(){
+		if ($('.util-link ').css('background-color') == 'gold') {
+			return false;
+		}
+	});
+});
+
+
+const targetElement = document.querySelectorAll(".animationTarget");
+console.log("画面の高さ", window.innerHeight)
+document.addEventListener("scroll", function() {
+  for(let i = 0; i < targetElement.length; i++) {
+    const getElementDistance = targetElement[i]. getBoundingClientRect().top + targetElement[i].clientHeight * .5
+    if(window.innerHeight > getElementDistance){
+      targetElement[i].classList.add("show");
+    }
+  }
+});
+
+
+
 
 
 

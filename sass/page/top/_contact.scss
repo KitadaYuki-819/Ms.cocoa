@@ -136,7 +136,7 @@
   font-size:rem(18);
   border:1px solid #5b5b5b;
   border-radius:2px;
-  color:#a4a4a4;
+  color:#a4a4a4 !important;
   
   @include mq("md") {
     font-size:rem(16);
@@ -144,6 +144,8 @@
     
   }
 }
+
+
 
 .contact-footer{
   text-align:center;
@@ -231,12 +233,20 @@
   font-weight:bold;
   letter-spacing:0.02rem;
   border:none;
+  opacity:0.6;
+  // transition:.5s;
   
   @include mq("md") {
     font-size:rem(24);
     padding:rem(20) rem(141);
     
   }
+}
+
+
+.isActive {
+  opacity: 1;
+ 
 }
 
 

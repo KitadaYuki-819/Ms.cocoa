@@ -5,14 +5,13 @@
   width:80%;
   margin:0 auto;
   font-size: rem(24);
-  padding-top:rem(100);
+  padding-top:rem(20);
   padding-bottom:rem(50);
   
   @include mq("md") {
     font-size: rem(36);
-    // padding:rem(300);
-    // padding:rem(200);
-    padding-top:rem(200);
-    padding-bottom:rem(200);
+   
+    padding-top:5rem;
+    padding-bottom:8rem;
   }
 }
