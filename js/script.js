@@ -193,7 +193,7 @@ document.addEventListener("scroll", function() {
       targetElement[i].classList.add("show");
     }
   }
-})
+});
 
 
 
